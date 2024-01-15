@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context=".PropertyView">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="Discover"
+        android:textSize="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="375dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_coner"
+        android:drawableStart="@drawable/baseline_search_24"
+        android:hint="Search"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/idRecycleView"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="620dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:outlineAmbientShadowColor="@color/black"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:id="@+id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/baseline_house_24"/>
+        <ImageView
+            android:id="@+id/add"
+            android:layout_toRightOf="@id/home"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/baseline_post_add_24"/>
+
+        <ImageView
+            android:id="@+id/idDelete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/add"
+            android:src="@drawable/baseline_delete_24" />
+
+        <ImageView
+            android:id="@+id/idLogout"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="40dp"
+            android:layout_toRightOf="@id/idDelete"
+            android:src="@drawable/baseline_logout_24" />
+    </RelativeLayout>
+
+</LinearLayout>
