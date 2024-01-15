@@ -5,25 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/white"
+    android:background="@color/black"
     tools:context=".AddProperty">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="103dp"
+        android:layout_height="138dp"
         android:orientation="horizontal">
-
-        <ImageView
-            android:layout_width="86dp"
-            android:layout_height="90dp"
-            android:layout_margin="10dp"
-            android:src="@mipmap/logo_foreground" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="110dp"
             android:text="Add Property"
-            android:textColor="@color/black"
+            android:textColor="#12499C"
             android:textSize="30dp"
             android:textStyle="bold" />
     </LinearLayout>
@@ -33,89 +29,21 @@
         android:layout_height="wrap_content"
         android:textColor="@color/black"
         android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
         android:textSize="20dp"
         android:text="Type of Property"/>
 
-    <RadioGroup
-        android:id="@+id/idPropertyGroup"
+
+    <EditText
+        android:id="@+id/idPropertyType"
         android:layout_width="380dp"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_marginTop="10dp"
+        android:inputType="text|textMultiLine"
         android:layout_gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="10dp"
-        android:checkedButton="@+id/a">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <!-- Add android:checked="true" to the initially checked RadioButton -->
-            <RadioButton
-                android:id="@+id/a"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Apartment"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:checked="true" />
-
-            <RadioButton
-                android:id="@+id/b"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Condos"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Bungalow"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/d"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Tiny House"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/e"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Cabin"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-
-            <RadioButton
-                android:id="@+id/f"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="4dp"
-                android:text="Tudor"
-                android:layout_marginLeft="15dp"
-                android:textColor="@color/black"
-                android:textSize="20sp" />
-        </LinearLayout>
-    </RadioGroup>
-
+        android:textColor="@color/white"
+        android:hint="Enter the Property Type"
+        android:gravity="top"/>
 
 
     <LinearLayout
@@ -127,6 +55,7 @@
             android:id="@+id/idBedroom"
             android:layout_width="180dp"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:layout_marginLeft="20dp"
             android:inputType="number"
             android:hint="Bedroom"
@@ -136,6 +65,7 @@
             android:layout_width="180dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
             android:inputType="number"
             android:hint="Price per month"
             android:drawableStart="@drawable/baseline_currency_exchange_24"/>
@@ -146,6 +76,7 @@
         android:layout_height="70dp"
         android:layout_marginTop="10dp"
         android:inputType="text|textMultiLine"
+        android:textColor="@color/white"
         android:layout_gravity="center"
         android:hint="Enter the Home address"
         android:gravity="top"/>
@@ -154,6 +85,7 @@
         android:layout_width="380dp"
         android:layout_height="70dp"
         android:inputType="text|textMultiLine"
+        android:textColor="@color/white"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
         android:hint="Enter the furniture type "
@@ -162,6 +94,7 @@
         android:id="@+id/idRemark"
         android:layout_width="380dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/white"
         android:layout_height="70dp"
         android:inputType="text|textMultiLine"
         android:layout_gravity="center"
@@ -173,6 +106,7 @@
         android:layout_width="380dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/white"
         android:inputType="none"
         android:layout_gravity="center"
         android:gravity="top" />
@@ -182,16 +116,18 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
-        android:backgroundTint="@color/button"
-        android:paddingTop="10dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#12499C"
+        android:paddingTop="0dp"
         android:text="ADD PROPERTY"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="20dp" />
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:outlineAmbientShadowColor="@color/black"
+        android:layout_marginTop="70dp"
         android:layout_alignParentBottom="true"
         >
         <ImageView
@@ -199,7 +135,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/baseline_house_24"/>
+            android:src="@drawable/home"/>
         <ImageView
             android:id="@+id/add"
             android:layout_toRightOf="@id/home"
@@ -207,6 +143,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:src="@drawable/baseline_post_add_24"/>
+
 
         <ImageView
             android:id="@+id/idDelete"

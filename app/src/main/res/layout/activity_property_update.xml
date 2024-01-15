@@ -2,6 +2,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/black"
     tools:context=".PropertyUpdate"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
@@ -13,17 +14,21 @@
             android:padding="20dp"
             tools:ignore="MissingConstraints">
 
-            <ImageView
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:src="@mipmap/logo_foreground" />
+                android:textSize="30dp"
+                android:layout_marginTop="50dp"
+                android:textStyle="bold"
+                android:textColor="#12499C"
+                android:text="Edit Property"/>
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:textColorHint="#000000">
+                android:layout_marginTop="80dp"
+                android:textColorHint="#12499C">
 
                 <EditText
                     android:id="@+id/idPropertyType"
@@ -31,7 +36,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Property Type"
                     android:inputType="text"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -48,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:layout_weight="50"
-                    android:textColorHint="#000000">
+                    android:textColorHint="#12499C">
 
                     <EditText
                         android:id="@+id/idBedroom"
@@ -56,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Bedrooms"
                         android:inputType="text"
-                        android:textColor="#000000"
+                        android:textColor="#ffffff"
                         android:textSize="18sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -68,7 +73,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="4dp"
                     android:layout_weight="50"
-                    android:textColorHint="#000000">
+                    android:textColorHint="#12499C">
 
                     <EditText
                         android:id="@+id/idPrice"
@@ -76,7 +81,7 @@
                         android:layout_height="wrap_content"
                         android:hint="Price"
                         android:inputType="text"
-                        android:textColor="#000000"
+                        android:textColor="#ffffff"
                         android:textSize="18sp" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -87,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textColorHint="#000000">
+                android:textColorHint="#12499C">
 
                 <EditText
                     android:id="@+id/idLocation"
@@ -95,7 +100,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Location"
                     android:inputType="text"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -103,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textColorHint="#000000">
+                android:textColorHint="#12499C">
 
                 <EditText
                     android:id="@+id/idFurnitureType"
@@ -111,7 +116,7 @@
                     android:layout_height="wrap_content"
                     android:hint="Furniture Type"
                     android:inputType="text"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -119,7 +124,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:textColorHint="#000000">
+                android:textColorHint="#12499C">
 
                 <EditText
                     android:id="@+id/idRemark"
@@ -127,7 +132,7 @@
                     android:layout_height="100dp"
                     android:hint="Remarks"
                     android:inputType="text"
-                    android:textColor="#000000"
+                    android:textColor="#ffffff"
                     android:textSize="18sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -138,6 +143,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="30dp"
                 android:text="Update"
+                android:backgroundTint="#12499C"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
                 android:textSize="18sp"

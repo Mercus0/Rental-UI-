@@ -15,8 +15,7 @@ import android.widget.Toast;
 public class AddProperty extends AppCompatActivity {
 
     private String name;
-    RadioGroup propertyGroup;
-    EditText bedroom,price,address,furnitureType,remark,repo_name;
+    EditText txtpropertyType,bedroom,price,address,furnitureType,remark,repo_name;
     Button addProperty;
     String propertyType,bed,pri,add,fur,rem;
     @Override
@@ -28,13 +27,13 @@ public class AddProperty extends AppCompatActivity {
 
         home=findViewById(R.id.home);
         delete=findViewById(R.id.idDelete);
+        logout=findViewById(R.id.idLogout);
         //variable
 
         Intent intent=getIntent();
         name=intent.getStringExtra("USER_NAME");
 
         addProperty=findViewById(R.id.idAddProperty);
-        propertyGroup=findViewById(R.id.idPropertyGroup);
         bedroom=findViewById(R.id.idBedroom);
         price=findViewById(R.id.idPrice);
         address=findViewById(R.id.idAddress);
@@ -44,27 +43,12 @@ public class AddProperty extends AppCompatActivity {
         repo_name.setFocusable(false);
         repo_name.setClickable(false);
         repo_name.setText(name.toString());
-
-        int rdoId=propertyGroup.getCheckedRadioButtonId();
-        if (rdoId != -1) {
-            if(rdoId==R.id.a){
-                propertyType="Apartment";
-            }else if(rdoId==R.id.b){
-                propertyType="Condos";
-            }else if(rdoId==R.id.c){
-                propertyType="Bungalow";
-            }else if(rdoId==R.id.d){
-                propertyType="Tiny House";
-            }else if(rdoId==R.id.e){
-                propertyType="Cabin";
-            }else{
-                propertyType="Tudor";
-            }
-        }
+        txtpropertyType=findViewById(R.id.idPropertyType);
 
         addProperty.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                propertyType=txtpropertyType.getText().toString();
                 bed=bedroom.getText().toString();
                 pri=price.getText().toString();
                 add=address.getText().toString();
@@ -101,6 +85,13 @@ public class AddProperty extends AppCompatActivity {
                 Intent t1=new Intent(AddProperty.this,PropertySearch.class);
                 t1.putExtra("USER_NAME",name);
                 startActivity(t1);
+            }
+        });
+
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
             }
         });
     }

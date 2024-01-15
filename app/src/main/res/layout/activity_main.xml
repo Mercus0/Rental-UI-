@@ -41,12 +41,11 @@
 
         <Button
             android:layout_width="190dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:paddingTop="10dp"
             android:text="Sign Up"
             android:textAlignment="center"
-            android:background="@drawable/button"
-            android:backgroundTint="@color/button"
+            android:backgroundTint="#12499C"
             android:textSize="30dp"
             android:id="@+id/idRegisterButton"/>
     </LinearLayout>

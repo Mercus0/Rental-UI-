@@ -21,6 +21,7 @@
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
         android:inputType="textEmailAddress"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:hint="Enter your Email"
         android:paddingTop="10dp"
@@ -31,6 +32,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
         android:layout_gravity="center"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:inputType="textPassword"
         android:hint="Enter your Password"
@@ -56,7 +58,7 @@
         android:layout_marginTop="60dp"
         android:paddingTop="10dp"
         android:textColor="@color/white"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="#12499C"
         android:layout_gravity="center"/>
 
     <RelativeLayout

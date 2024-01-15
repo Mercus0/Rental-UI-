@@ -2,7 +2,7 @@
     <solid android:color="@android:color/transparent" />
     <stroke
         android:width="2dp"
-        android:color="#000000" /> <!-- Set the border color here -->
+        android:color="#12499C" /> <!-- Set the border color here -->
     <corners android:radius="8dp" /> <!-- Set the corner radius as needed -->
 </shape>
 

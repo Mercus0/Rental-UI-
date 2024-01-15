@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
     android:orientation="vertical"
     android:background="@color/white"
     tools:context=".PropertyView">
@@ -14,7 +15,7 @@
         android:text="Discover"
         android:textSize="30dp"
         android:layout_marginLeft="20dp"
-        android:textColor="@color/black"
+        android:textColor="#12499C"
         android:textStyle="bold"/>
 
     <EditText
@@ -46,7 +47,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/baseline_house_24"/>
+            android:src="@drawable/home"/>
         <ImageView
             android:id="@+id/add"
             android:layout_toRightOf="@id/home"

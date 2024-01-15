@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         login=findViewById(R.id.loginButton);
         signUp=findViewById(R.id.idRegisterButton);
 
-        Uri uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.loginvideo);
+        Uri uri=Uri.parse("android.resource://"+getPackageName()+"/"+R.raw.video);
 
         video.setVideoURI(uri);
         video.start();

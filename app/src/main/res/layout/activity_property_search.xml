@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
 android:layout_width="match_parent"
-android:layout_height="match_parent"
+    android:backgroundTint="@color/black"
+android:layout_height="match_parent" android:background="@color/white"
 xmlns:app="http://schemas.android.com/apk/res-auto"
 tools:context=".PropertySearch">
 
@@ -18,7 +19,7 @@ tools:context=".PropertySearch">
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
         android:gravity="center"
-        android:shadowColor="#F2000000"
+        android:textColor="#12499C"
         android:layout_marginBottom="5dp"
         android:text="Edit Post"
         android:textAlignment="center"
@@ -81,6 +82,7 @@ tools:context=".PropertySearch">
                 android:layout_height="65dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"
+                android:backgroundTint="#12499C"
                 android:text="Search"
                 android:textAllCaps="false"
                 android:textColor="#ffffff"
@@ -92,8 +94,8 @@ tools:context=".PropertySearch">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_height="400dp"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="@id/searchcard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -110,6 +112,7 @@ tools:context=".PropertySearch">
             android:layout_height="65dp"
             android:layout_gravity="center"
             android:text="Delete"
+            android:backgroundTint="#BC1A1A"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="18sp"
@@ -120,6 +123,7 @@ tools:context=".PropertySearch">
             android:layout_height="65dp"
             android:layout_gravity="center"
             android:text="Update"
+            android:backgroundTint="#12499C"
             android:textAllCaps="false"
             android:textColor="#ffffff"
             android:textSize="18sp"
@@ -128,15 +132,15 @@ tools:context=".PropertySearch">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:outlineAmbientShadowColor="@color/black"
         android:layout_alignParentBottom="true"
         >
+
         <ImageView
             android:id="@+id/home"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="42dp"
+            android:layout_height="37dp"
             android:layout_marginLeft="40dp"
-            android:src="@drawable/baseline_house_24"/>
+            android:src="@drawable/home" />
         <ImageView
             android:id="@+id/add"
             android:layout_toRightOf="@id/home"
@@ -144,6 +148,7 @@ tools:context=".PropertySearch">
             android:layout_height="50dp"
             android:layout_marginLeft="40dp"
             android:src="@drawable/baseline_post_add_24"/>
+
 
         <ImageView
             android:id="@+id/idDelete"
@@ -161,6 +166,7 @@ tools:context=".PropertySearch">
             android:layout_toRightOf="@id/idDelete"
             android:src="@drawable/baseline_logout_24" />
     </RelativeLayout>
-
 </LinearLayout>
+
+
 </ScrollView>

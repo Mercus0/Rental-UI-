@@ -19,6 +19,7 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
+        android:textColor="@color/black"
         android:layout_gravity="center"
         android:textSize="20dp"
         android:hint="Enter your Name"
@@ -31,6 +32,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:hint="Enter your Email"
         android:paddingTop="10dp"
@@ -46,6 +48,7 @@
         android:layout_marginTop="10dp"
         android:inputType="textPassword"
         android:hint="Password"
+        android:textColor="@color/black"
         android:paddingTop="7dp"
         android:drawableStart="@drawable/baseline_lock_24"/>
     <EditText
@@ -55,6 +58,7 @@
         android:textSize="20dp"
         android:hint="Confirm Password"
         android:layout_gravity="center"
+        android:textColor="@color/black"
         android:layout_marginTop="10dp"
         android:inputType="textPassword"
         android:paddingTop="7dp"
@@ -91,6 +95,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:layout_gravity="center"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:hint="Enter your phone"
         android:inputType="number"
@@ -106,7 +111,7 @@
         android:textAlignment="center"
         android:layout_marginTop="60dp"
         android:paddingTop="10dp"
-        android:backgroundTint="@color/button"
+        android:backgroundTint="#274EFF"
         android:layout_gravity="center"/>
     <RelativeLayout
         android:layout_width="match_parent"
