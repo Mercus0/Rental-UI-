@@ -54,8 +54,6 @@ public class RegisterPage extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DBHelper dbHelper = new DBHelper(getApplicationContext());
-                //dbHelper.addUser(userName.getText().toString(),userEmail.getText().toString(),userPassword.getText().toString(),gender,userPhone.toString().toString());
-
                 // Get user input
                 String name = userName.getText().toString();
                 String email = userEmail.getText().toString();
@@ -68,6 +66,18 @@ public class RegisterPage extends AppCompatActivity {
                         TextUtils.isEmpty(password) || TextUtils.isEmpty(phone)) {
                     // Handle the case where any of the input fields is empty
                     Toast.makeText(getApplicationContext(), "Please fill in all fields", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                //check invalid email or not
+                if(!isValidEmail(email)){
+                    Toast.makeText(getApplicationContext(), "Invalid email address", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                //check password length
+                if(password.length()<6){
+                    Toast.makeText(getApplicationContext(),"Password must have at least 6 digit.",Toast.LENGTH_SHORT).show();
                     return;
                 }
                 //check password and confirm password are equal
@@ -87,6 +97,10 @@ public class RegisterPage extends AppCompatActivity {
                 startActivity(toLogin);
             }
         });
-
+    }
+    private boolean isValidEmail(String email){
+        String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
+        // Return true if the email matches the pattern, otherwise return false
+        return email.matches(emailPattern);
     }
 }
